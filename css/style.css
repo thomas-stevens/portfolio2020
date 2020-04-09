@@ -19,7 +19,7 @@
    --body: #000;
    --bodyfont: #fff;
    --background: #fff;
-   --logo: url(../img/logo-geel.svg);
+   --logo: url(../img/logo-zwart.svg);
  }
 
  body {
@@ -114,7 +114,7 @@
 
  section {
    height: 85vh;
-   margin-bottom: 3em;
+   margin-bottom: 10em;
  }
 
  section h1 {
@@ -173,6 +173,7 @@
    grid-row-end: 3;
    grid-row-start: 2;
    justify-self: start;
+   line-height: 1.5em;
  }
 
  .second-section a {
@@ -238,6 +239,41 @@
    text-transform: uppercase;
    width: 8em;
    padding: .6em;
+ }
+
+ .third-section {
+   /* grid-column-gap: 3vw;
+   display: grid;
+   grid-template-columns: 4vw 22vw 40vw 22vw;
+   grid-template-rows: 10vh 35vh 35vh; */
+   grid-column-gap: 5vw;
+   display: grid;
+   grid-template-columns: 2vw 55vw 30vw;
+   grid-template-rows: 10vh 35vh 35vh;
+ }
+
+ .third-section h1 {
+   font-size: 8em;
+   grid-column-start: 2;
+   grid-row-start: 1;
+   justify-self: start;
+ }
+
+ .third-section .img {
+   background-attachment: fixed;
+   background-image: url(../img/thomasstevens.jpg);
+   background-position: center left;
+   background-repeat: no-repeat;
+   background-size: contain;
+   grid-column-start: 2;
+   grid-row-end: 4;
+   grid-row-start: 2;
+   justify-self: start;
+   width: 55vw;
+ }
+
+ .fourth-section{
+   margin: 0;
  }
 
  /* -------------------------------------------------- */
