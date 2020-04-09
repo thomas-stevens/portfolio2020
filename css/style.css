@@ -64,6 +64,7 @@
    height: 15vh;
    transition: .15s ease-out;
    width: 100vw;
+   z-index: 99;
  }
 
  nav ul {
@@ -186,8 +187,9 @@
    grid-row-start: 3;
    height: 5vh;
    text-transform: uppercase;
-   width: 8em;
+   width: 7.7em;
    padding: .6em;
+   z-index: 1;
  }
 
  .second-section-2 {
@@ -237,18 +239,15 @@
    grid-row-start: 3;
    height: 5vh;
    text-transform: uppercase;
-   width: 8em;
+   width: 7.7em;
    padding: .6em;
+   z-index: 1;
  }
 
  .third-section {
-   /* grid-column-gap: 3vw;
-   display: grid;
-   grid-template-columns: 4vw 22vw 40vw 22vw;
-   grid-template-rows: 10vh 35vh 35vh; */
    grid-column-gap: 5vw;
    display: grid;
-   grid-template-columns: 2vw 55vw 30vw;
+   grid-template-columns: 2vw 45vw 40vw;
    grid-template-rows: 10vh 35vh 35vh;
  }
 
@@ -269,11 +268,72 @@
    grid-row-end: 4;
    grid-row-start: 2;
    justify-self: start;
-   width: 55vw;
+   width: 45vw;
+ }
+
+ .third-section a {
+   border: 2px solid var(--bodyfont);
+   color: var(--bodyfont);
+   font-family: 'Source Sans Pro', sans-serif;
+   font-size: 1.5em;
+   font-weight: 900;
+   grid-column-start: 3;
+   grid-row-start: 3;
+   height: 5vh;
+   text-transform: uppercase;
+   width: 9em;
+   padding: .6em;
+   align-self: flex-end;
+   z-index: 1;
  }
 
  .fourth-section{
    margin: 0;
+ }
+
+ .fourth-section h1{
+   font-size: 8em;
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+ }
+
+ .fourth-section a{
+   font-size: 1.5em;
+   font-family: 'Playfair Display', serif;
+   color: var(--bodyfont);
+   display: flex;
+   justify-content: center;
+   margin-right: auto;
+   margin-left: auto;
+   width: 10.5em;
+   margin-bottom: .3em;
+ }
+
+ .fourth-section a:last-of-type{
+   width: 6.3em;
+ }
+
+ .link{
+   position: relative;
+ }
+
+ .link:after{
+   content: '';
+   position: absolute;
+   width: 0; height: 3px;
+   display: block;
+   margin-top: 35px;
+   right: 0;
+   background: var(--bodyfont);
+   transition: width .4s ease;
+   -webkit-transition: width .4s ease;
+ }
+
+ .link:hover:after{
+   width: 100%;
+   left: 0;
+   background: var(--bodyfont);
  }
 
  /* -------------------------------------------------- */
