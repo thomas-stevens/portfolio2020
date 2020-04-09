@@ -2157,7 +2157,7 @@
   left: 0;
   right: 100%;
   bottom: 0;
-  background: #2098D1;
+  background: var(--body);
   height: 4px;
   -webkit-transition-property: right;
   transition-property: right;
@@ -2373,7 +2373,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: #2098D1;
+  background: var(--bodyfont);
   height: 4px;
   -webkit-transform: translateY(4px);
   transform: translateY(4px);
