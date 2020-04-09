@@ -9,6 +9,7 @@
    --navassets: #30353D;
    --body: #30353D;
    --bodyfont: #FEDE66;
+   --background: #FEDE66;
    --logo: url(../img/logo-grijs.svg);
  }
 
@@ -17,6 +18,7 @@
    --navassets: #000;
    --body: #000;
    --bodyfont: #fff;
+   --background: #fff;
    --logo: url(../img/logo-geel.svg);
  }
 
@@ -26,11 +28,15 @@
  }
 
  p {
-   margin: 0;
-   font-family: 'Source Sans Pro', sans-serif;
    color: var(--bodyfont);
+   font-family: 'Source Sans Pro', sans-serif;
+   margin: 0;
    transition: .15s ease-out;
  }
+
+ a:hover{
+  text-decoration: none;
+}
 
  .logo {
    align-self: center;
@@ -66,10 +72,10 @@
    font-size: 1.5em;
    font-weight: 900;
    list-style: none;
+   margin: 0;
    place-self: center;
    text-align: center;
    text-transform: uppercase;
-   margin: 0;
  }
 
  nav ul a {
@@ -97,8 +103,8 @@
 
  .sticky {
    bottom: 0;
-   top: auto;
    position: fixed;
+   top: auto;
    width: 100%;
  }
 
@@ -108,6 +114,7 @@
 
  section {
    height: 85vh;
+   margin-bottom: 3em;
  }
 
  section h1 {
@@ -128,58 +135,113 @@
  }
 
  .first-section h1 {
-   text-align: center;
    align-self: center;
+   text-align: center;
  }
 
  .second-section {
+   grid-column-gap: 5vw;
    display: grid;
    grid-template-columns: 2vw 55vw 30vw;
    grid-template-rows: 10vh 35vh 35vh;
-   grid-column-gap: 5vw;
  }
 
  .second-section h1 {
+   font-size: 8em;
    grid-column-start: 2;
    grid-row-start: 1;
    justify-self: start;
-   font-size: 8em;
  }
 
  .second-section .img {
-   grid-column-start: 2;
-   grid-row-start: 2;
-   grid-row-end: 4;
-   justify-self: start;
-   background-size: contain;
-   background-image: url(../img/coc-billboard.jpg);
    background-attachment: fixed;
-   background-repeat: no-repeat;
+   background-image: url(../img/clashofcultures.jpg);
    background-position: center left;
+   background-repeat: no-repeat;
+   background-size: contain;
+   grid-column-start: 2;
+   grid-row-end: 4;
+   grid-row-start: 2;
+   justify-self: start;
    width: 55vw;
  }
 
  .second-section p {
-   grid-column-start: 3;
-   grid-row-start: 2;
-   grid-row-end: 3;
-   justify-self: start;
-   font-size: 1.5em;
    font-family: 'Playfair Display', serif;
+   font-size: 1.5em;
+   grid-column-start: 3;
+   grid-row-end: 3;
+   grid-row-start: 2;
+   justify-self: start;
  }
 
- .second-section a{
-   grid-column-start: 3;
-   grid-row-start: 3;
+ .second-section a {
+   border: 2px solid var(--bodyfont);
    color: var(--bodyfont);
    font-family: 'Source Sans Pro', sans-serif;
-   font-size: 2em;
-   width: 30vw;
+   font-size: 1.5em;
+   font-weight: 900;
+   grid-column-start: 3;
+   grid-row-start: 3;
+   height: 5vh;
+   text-transform: uppercase;
+   width: 8em;
+   padding: .6em;
+ }
+
+ .second-section-2 {
+   grid-column-gap: 5vw;
+   display: grid;
+   grid-template-columns: 2vw 30vw 55vw;
+   grid-template-rows: 10vh 35vh 35vh;
+ }
+
+ .second-section-2 h1 {
+   font-size: 8em;
+   grid-column-start: 3;
+   grid-row-start: 1;
+   justify-self: start;
+ }
+
+ .second-section-2 .img {
+   background-attachment: fixed;
+   background-image: url(../img/projectweb.jpg);
+   background-position: right;
+   background-repeat: no-repeat;
+   background-size: contain;
+   grid-column-start: 3;
+   grid-row-end: 4;
+   grid-row-start: 2;
+   justify-self: start;
+   width: 55vw;
+   right: 200px;
+ }
+
+ .second-section-2 p {
+   font-family: 'Playfair Display', serif;
+   font-size: 1.5em;
+   grid-column-start: 2;
+   grid-row-end: 3;
+   grid-row-start: 2;
+   justify-self: start;
+ }
+
+ .second-section-2 a {
+   border: 2px solid var(--bodyfont);
+   color: var(--bodyfont);
+   font-family: 'Source Sans Pro', sans-serif;
+   font-size: 1.5em;
+   font-weight: 900;
+   grid-column-start: 2;
+   grid-row-start: 3;
+   height: 5vh;
+   text-transform: uppercase;
+   width: 8em;
+   padding: .6em;
  }
 
  /* -------------------------------------------------- */
  /* Dark Mode */
-
  /*slider switch css */
  .theme-switch-wrapper {
    align-self: center;
