@@ -4,6 +4,22 @@
    padding: 0;
  }
 
+ html {
+   --nav: #FEDE66;
+   --navassets: #30353D;
+   --body: #30353D;
+   --bodyfont: #FEDE66;
+   --logo: url(../img/logo-grijs.svg);
+ }
+
+ [data-theme="dark"] {
+   --nav: #fff;
+   --navassets: #000;
+   --body: #000;
+   --bodyfont: #fff;
+   --logo: url(../img/logo-geel.svg);
+ }
+
  body {
    background-color: var(--body);
    transition: .15s ease-out;
@@ -146,35 +162,23 @@
  .second-section p {
    grid-column-start: 3;
    grid-row-start: 2;
+   grid-row-end: 3;
    justify-self: start;
    font-size: 1.5em;
    font-family: 'Playfair Display', serif;
-   height: 35vh;
  }
 
  .second-section a{
    grid-column-start: 3;
-   grid-row-start: 2;
-   height: 5vh;
+   grid-row-start: 3;
+   color: var(--bodyfont);
+   font-family: 'Source Sans Pro', sans-serif;
+   font-size: 2em;
+   width: 30vw;
  }
 
  /* -------------------------------------------------- */
  /* Dark Mode */
- :root {
-   --nav: #FEDE66;
-   --navassets: #30353D;
-   --body: #30353D;
-   --bodyfont: #FEDE66;
-   --logo: url(../img/logo-grijs.svg);
- }
-
- [data-theme="dark"] {
-   --nav: #30353D;
-   --navassets: #FEDE66;
-   --body: #FEDE66;
-   --bodyfont: #30353D;
-   --logo: url(../img/logo-geel.svg);
- }
 
  /*slider switch css */
  .theme-switch-wrapper {
