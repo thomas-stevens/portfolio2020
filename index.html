@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio | Thomas Stevens</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/uikit.css">
+  <link rel="stylesheet" href="css/hover.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+Pro:wght@400;900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <nav id="navbar">
+    <div class="logo"></div>
+      <ul>
+        <a uk-scroll class="hvr-float" href="#work"><li>Work</li></a>
+        <a uk-scroll class="hvr-float" href="#about"><li>About</li></a>
+        <a uk-scroll class="hvr-float" href="#contact"><li>Contact</li></a>
+      </ul>
+
+      <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+          <input type="checkbox" id="checkbox" />
+          <div class="slider round"></div>
+        </label>
+      </div>
+
+  </nav>
+
+  <main>
+
+    <section id="top" class="first-section">
+      <h1>Hello</h1>
+      <p>scroll down please.</p>
+    </section>
+
+    <section id="work" class="second-section">
+      <div class="img" uk-parallax="bgy: -200"></div>
+      <h1>Clash of Cultures</h1>
+      <p>Een vrije opdracht waarin je een visuele identiteit moest creëren. Het beeldtaal moet naar voren komen, en ook zichtbaar zijn in de media uitingen.</p>
+    </section>
+
+    <section id="about" class="third-section">
+      <h1>About</h1>
+    </section>
+
+    <section id="contact" class="fourth-section">
+      <h1>Contact</h1>
+    </section>
+
+  </main>
+
+  <script src="js/dark-mode-switch.js"></script>
+  <script src="js/uikit.js"></script>
+
+</body>
+
+</html>
