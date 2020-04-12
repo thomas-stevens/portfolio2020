@@ -65,6 +65,7 @@
    transition: .15s ease-out;
    width: 100vw;
    z-index: 99;
+   position: fixed;
  }
 
  nav ul {
