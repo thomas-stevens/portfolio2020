@@ -127,6 +127,14 @@
    transition: .15s ease-out;
  }
 
+ section h2 {
+   color: var(--bodyfont);
+   font-family: 'Playfair Display', serif;
+   font-weight: bold;
+   margin: 0;
+   transition: .15s ease-out;
+ }
+
  .first-section {
    display: grid;
  }
@@ -147,7 +155,7 @@
    grid-template-rows: 10vh 35vh 35vh;
  }
 
- .second-section h1 {
+ .second-section h2 {
    font-size: 8em;
    grid-column-start: 2;
    grid-row-start: 1;
@@ -199,7 +207,7 @@
    grid-template-rows: 10vh 45vh 25vh;
  }
 
- .second-section-2 h1 {
+ .second-section-2 h2 {
    font-size: 8em;
    grid-column-start: 3;
    grid-row-start: 1;
@@ -252,7 +260,7 @@
    grid-template-rows: 10vh 35vh 35vh;
  }
 
- .third-section h1 {
+ .third-section h2 {
    font-size: 8em;
    grid-column-start: 2;
    grid-row-start: 1;
@@ -302,7 +310,7 @@
    margin: 0;
  }
 
- .fourth-section h1{
+ .fourth-section h2{
    font-size: 8em;
    display: flex;
    justify-content: center;
@@ -326,7 +334,7 @@
  }
 
  .work-section{
-   height: 100vh;
+   height: 85vh;
    margin: 0;
    display: flex;
    align-items: center;
@@ -335,6 +343,47 @@
 
  .work-section h1{
    text-align: center;
+   font-size: 8em;
+ }
+
+ .work-section-2{
+   height: 100vh;
+   margin-bottom: 5em;
+   display: grid;
+ }
+
+ .work-section-2 .img {
+   background-attachment: fixed;
+   background-image: url(../img/clashofcultures.jpg);
+   background-position: center left;
+   background-repeat: no-repeat;
+   background-size: cover;
+   justify-self: center;
+   width:85vw;
+ }
+
+ .work-section-3{
+   display: grid;
+   grid-template-columns: 60vw 20vw;
+   column-gap: 5vw;
+   grid-template-rows: 7vh;
+   width: 85vw;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 0;
+ }
+
+ .work-section-3 h2{
+   grid-column-start: 1;
+   grid-row-start: 1;
+   font-size: 2em;
+ }
+
+ .work-section-3 p{
+   grid-column-start: 1;
+   grid-row-start: 2;
+   font-size: 1em;
+   line-height: 32px;
  }
 
 
