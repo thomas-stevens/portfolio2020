@@ -5,21 +5,21 @@
  }
 
  html {
-   --nav: #FEDE66;
-   --navassets: #30353D;
-   --body: #30353D;
-   --bodyfont: #FEDE66;
-   --background: #FEDE66;
-   --logo: url(../img/logo-grijs.svg);
- }
-
- [data-theme="dark"] {
    --nav: #fff;
    --navassets: #000;
    --body: #000;
    --bodyfont: #fff;
    --background: #fff;
    --logo: url(../img/logo-zwart.svg);
+ }
+
+ [data-theme="color"] {
+   --nav: #FEDE66;
+   --navassets: #30353D;
+   --body: #30353D;
+   --bodyfont: #FEDE66;
+   --background: #FEDE66;
+   --logo: url(../img/logo-grijs.svg);
  }
 
  body {
@@ -344,6 +344,7 @@
  .work-section h1{
    text-align: center;
    font-size: 8em;
+   font-smooth: auto;
  }
 
  .work-section-2{
@@ -370,7 +371,7 @@
    width: 85vw;
    margin-left: auto;
    margin-right: auto;
-   margin-bottom: 0;
+   margin-bottom: 6em;
    height: 70vh;
  }
 
@@ -383,17 +384,19 @@
  .work-section-3 p{
    grid-column-start: 1;
    grid-row-start: 2;
-   font-size: .9em;
-   line-height: 30px;
+   font-size: 1.5em;
+   line-height: 1.5em;
  }
 
  .work-section-3 .img{
    grid-row-start: 2;
-   /* background-attachment: fixed; */
+   background-attachment: fixed;
    background-image: url(../img/opdracht.jpg);
+   background-position: center right;
    background-repeat: no-repeat;
-   background-size: contain;
-   width:30vw;
+   background-size: cover;
+   justify-self: center;
+   width: 30vw;
  }
 
  .work-section-4{
