@@ -15,6 +15,9 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@400;900&family=Source+Sans+Pro:wght@400;900&display=swap" rel="stylesheet">
 
+  <!-- Fontawesome -->
+  <script src="https://kit.fontawesome.com/e8097d70bc.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -36,10 +39,37 @@
 
   </nav>
 
+  <a class="resp-menu" type="button" uk-toggle="target: #offcanvas-flip"><i class="fas fa-ellipsis-v"></i></a>
+
+  <div id="offcanvas-flip" uk-offcanvas="flip: true;">
+      <div class="uk-offcanvas-bar">
+
+          <a class="uk-offcanvas-close" type="button" uk-close></a>
+
+          <div class="logo" uk-tooltip="title: Thomas Stevens; pos: right"></div>
+            <ul>
+              <a uk-scroll class="hvr-underline-from-left" href="#work"><li>Work</li></a>
+              <a uk-scroll class="hvr-underline-from-left" href="#about"><li>About</li></a>
+              <a uk-scroll class="hvr-underline-from-left" href="#contact"><li>Contact</li></a>
+            </ul>
+
+            <div class="theme-switch-wrapper">
+              <label class="theme-switch" for="checkbox" uk-tooltip="title: Dark / Color; pos: left">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+              </label>
+            </div>
+
+      </div>
+  </div>
+
   <main>
 
     <section id="top" class="first-section">
       <h1>Hallo. Kijk verder</h1>
+      <div class="arrow bounce">
+        <p>Scroll down</p>
+      </div>
     </section>
 
     <section id="work" class="second-section">
