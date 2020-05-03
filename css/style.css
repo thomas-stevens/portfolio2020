@@ -13,13 +13,22 @@
    --logo: url(../img/logo-zwart.svg);
  }
 
- [data-theme="color"] {
+ /* [data-theme="color"] {
    --nav: #FEDE66;
    --navassets: #30353D;
    --body: #30353D;
    --bodyfont: #FEDE66;
    --background: #FEDE66;
    --logo: url(../img/logo-grijs.svg);
+ } */
+
+ [data-theme="color"] {
+   --nav: #e63946;
+   --navassets: #f1faee;
+   --body: #f1faee;
+   --bodyfont: #e63946;
+   --background: #e63946;
+   --logo: url(../img/logo-wit.svg);
  }
 
  body {
