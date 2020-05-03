@@ -174,7 +174,6 @@
 
  .second-section h2 {
    font-size: 8em;
-   text-shadow: 8px 3px #f1faee;
    grid-column-start: 2;
    grid-row-start: 1;
    justify-self: start;
