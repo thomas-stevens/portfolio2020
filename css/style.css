@@ -24,6 +24,8 @@
    --logo: url(../img/logo-grijs.svg);
  } */
 
+
+ /* ---- ROOD & BEIGE */
  [data-theme="color"] {
    --nav: #e63946;
    --navassets: #f1faee;
@@ -177,6 +179,7 @@
    grid-column-start: 2;
    grid-row-start: 1;
    justify-self: start;
+   z-index: 99;
  }
 
  .second-section .img {
@@ -190,6 +193,7 @@
    grid-row-start: 2;
    justify-self: start;
    width: 55vw;
+   filter: contrast(60%);
  }
 
  .second-section p {
@@ -230,6 +234,7 @@
    grid-column-start: 3;
    grid-row-start: 1;
    justify-self: start;
+   z-index: 99;
  }
 
  .second-section-2 .img {
@@ -244,6 +249,7 @@
    justify-self: start;
    width: 55vw;
    right: 200px;
+   filter: contrast(60%);
  }
 
  .second-section-2 p {
@@ -284,6 +290,7 @@
    grid-column-start: 2;
    grid-row-start: 1;
    justify-self: start;
+   z-index: 99;
  }
 
  .third-section .img {
@@ -297,6 +304,7 @@
    grid-row-start: 2;
    justify-self: start;
    width: 45vw;
+   filter: contrast(60%);
  }
 
  .third-section a {
