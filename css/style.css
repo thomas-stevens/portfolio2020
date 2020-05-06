@@ -215,7 +215,6 @@
    font-weight: 900;
    grid-column-start: 3;
    grid-row-start: 3;
-   height: 5vh;
    text-transform: uppercase;
    width: 7.7em;
    padding: .6em;
@@ -271,7 +270,6 @@
    font-weight: 900;
    grid-column-start: 2;
    grid-row-start: 3;
-   height: 5vh;
    text-transform: uppercase;
    width: 7.7em;
    padding: .6em;
@@ -315,7 +313,6 @@
    font-weight: 900;
    grid-column-start: 3;
    grid-row-start: 3;
-   height: 5vh;
    text-transform: uppercase;
    width: 9em;
    padding: .6em;
