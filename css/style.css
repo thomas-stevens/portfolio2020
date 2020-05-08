@@ -12,7 +12,8 @@
    --background: #fff;
    --logo: url(../img/logo-zwart.svg);
    --selection: #000000;
-   --selection-hover: #ffffff;
+   --selection-hover: #fff;
+   --textshadow: #000;
  }
 
 /* ---- ROOD & BEIGE */
@@ -25,6 +26,7 @@
   --logo: url(../img/logo-wit.svg);
   --selection: #f1faee;
   --selection-hover: #e63946;
+  --textshadow: #f1faee;
 }
 
 ::selection {
@@ -157,6 +159,14 @@
    font-weight: bold;
    margin: 0;
    transition: .15s ease-out;
+   text-shadow:
+    1px 0px var(--textshadow), 0px 1px var(--textshadow),
+    2px 1px var(--textshadow), 1px 2px var(--textshadow),
+    3px 2px var(--textshadow), 2px 3px var(--textshadow),
+    4px 3px var(--textshadow), 3px 4px var(--textshadow),
+    5px 4px var(--textshadow), 4px 5px var(--textshadow),
+    6px 5px var(--textshadow), 5px 6px var(--textshadow),
+    7px 6px var(--textshadow);
  }
 
  .first-section {
@@ -204,7 +214,7 @@
    grid-row-start: 2;
    justify-self: start;
    width: 55vw;
-   filter: contrast(60%);
+   filter: contrast(100%);
  }
 
  .second-section p {
@@ -259,7 +269,7 @@
    justify-self: start;
    width: 55vw;
    right: 200px;
-   filter: contrast(60%);
+   filter: contrast(100%);
  }
 
  .second-section-2 p {
@@ -313,7 +323,7 @@
    grid-row-start: 2;
    justify-self: start;
    width: 45vw;
-   filter: contrast(60%);
+   filter: contrast(100%);
  }
 
  .third-section a {
