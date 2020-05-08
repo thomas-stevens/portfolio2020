@@ -11,7 +11,26 @@
    --bodyfont: #fff;
    --background: #fff;
    --logo: url(../img/logo-zwart.svg);
+   --selection: #000000;
+   --selection-hover: #ffffff;
  }
+
+/* ---- ROOD & BEIGE */
+[data-theme="color"] {
+  --nav: #e63946;
+  --navassets: #f1faee;
+  --body: #f1faee;
+  --bodyfont: #e63946;
+  --background: #e63946;
+  --logo: url(../img/logo-wit.svg);
+  --selection: #f1faee;
+  --selection-hover: #e63946;
+}
+
+::selection {
+   color: var(--selection);
+   background: var(--selection-hover);
+}
 
  /*
 ---- GEEL & GRIJS
@@ -23,17 +42,6 @@
    --background: #FEDE66;
    --logo: url(../img/logo-grijs.svg);
  } */
-
-
- /* ---- ROOD & BEIGE */
- [data-theme="color"] {
-   --nav: #e63946;
-   --navassets: #f1faee;
-   --body: #f1faee;
-   --bodyfont: #e63946;
-   --background: #e63946;
-   --logo: url(../img/logo-wit.svg);
- }
 
  body {
    background-color: var(--body);
@@ -169,7 +177,7 @@
    text-align: center;
    font-size: 8em;
  }
- 
+
  .second-section {
    grid-column-gap: 5vw;
    display: grid;
