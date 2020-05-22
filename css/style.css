@@ -52,7 +52,7 @@
 
  p {
    color: var(--bodyfont);
-   font-family: 'Raleway', sans-serif;
+   font-family: 'Fauna One', serif;
    margin: 0;
    transition: .15s ease-out;
  }
@@ -167,6 +167,7 @@
     5px 4px var(--textshadow), 4px 5px var(--textshadow),
     6px 5px var(--textshadow), 5px 6px var(--textshadow),
     7px 6px var(--textshadow);
+
  }
 
  .first-section {
@@ -218,13 +219,13 @@
  }
 
  .second-section p {
-   font-family: 'Raleway', sans-serif;
+   font-family: 'Fauna One', serif;
    font-size: 1.5em;
    grid-column-start: 3;
    grid-row-end: 3;
    grid-row-start: 2;
    justify-self: start;
-   line-height: 1.5em;
+   line-height: 1.7em;
  }
 
  .second-section a {
@@ -273,13 +274,13 @@
  }
 
  .second-section-2 p {
-   font-family: 'Raleway', sans-serif;
+   font-family: 'Fauna One', serif;
    font-size: 1.5em;
    grid-column-start: 2;
    grid-row-end: 3;
    grid-row-start: 2;
    justify-self: start;
-   line-height: 1.5em;
+   line-height: 1.7em;
  }
 
  .second-section-2 a {
@@ -295,6 +296,19 @@
    width: 7.7em;
    padding: .6em;
    z-index: 1;
+ }
+
+ .morework{
+   height: 5vh;
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+ }
+
+ .morework a {
+   font-size: 1.5em;
+   font-family: 'Fauna One', serif;
+   color: var(--bodyfont);
  }
 
  .third-section {
@@ -342,13 +356,13 @@
  }
 
  .third-section p {
-   font-family: 'Raleway', sans-serif;
+   font-family: 'Fauna One', serif;
    font-size: 1.5em;
    grid-column-start: 3;
    grid-row-end: 3;
    grid-row-start: 2;
    justify-self: start;
-   line-height: 1.5em;
+   line-height: 1.7em;
  }
 
  .fourth-section {
@@ -364,14 +378,14 @@
 
  .fourth-section a {
    font-size: 1.5em;
-   font-family: 'Raleway', sans-serif;
+   font-family: 'Fauna One', serif;
    color: var(--bodyfont);
    display: flex;
    justify-content: center;
    margin-right: auto;
    margin-left: auto;
    width: 10.5em;
-   margin-bottom: .3em;
+   margin-bottom: .5em;
  }
 
  .fourth-section a:last-of-type {
@@ -430,7 +444,7 @@
    grid-column-start: 1;
    grid-row-start: 2;
    font-size: 1.5em;
-   line-height: 1.5em;
+   line-height: 1.7em;
  }
 
  .work-section-3 .img {
@@ -456,31 +470,6 @@
    height: 100vh;
  }
 
- /* -------------------------------------------------- */
- /* Hamburger */
- .resp-menu {
-   display: none;
- }
-
- .resp-menu:hover {
-   color: var(--nav);
- }
-
- @media (max-width: 600px) {
-   .resp-menu {
-     display: flex;
-     background-color: none;
-     color: var(--nav);
-     float: right;
-     font-size: 1.5em;
-     margin: 1em;
-     right: 0;
-     position: absolute;
-   }
- }
-
- /* -------------------------------------------------- */
- /* -------------------------------------------------- */
  /* Scroll down animation */
  .bounce {
    -moz-animation: bounce 2s infinite;
