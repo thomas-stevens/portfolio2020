@@ -193,12 +193,11 @@
  }
 
  .first-section h1 {
-   align-self: center;
    text-align: left;
    font-size: 3em;
    font-weight: 300;
-   padding: 3em 3em;
    line-height: 1.5;
+   width: 80vw;
  }
 
  .second-section {

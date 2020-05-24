@@ -1,12 +1,9 @@
 .content {
 	display: flex;
 	flex-direction: column;
-	width: 100vw;
-	height: calc(100vh - 13rem);
 	position: relative;
-	justify-content: flex-start;
+	justify-content: center;
 	align-items: center;
-	transition: .15s ease-out;
 }
 
 .distort {
@@ -25,4 +22,8 @@
 	align-items: stretch;
 	text-align: center;
 	font-weight: normal;
+}
+
+.menu__link{
+	transition: .15s ease-out;
 }
