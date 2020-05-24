@@ -11,6 +11,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="css/uikit.css">
   <link rel="stylesheet" href="css/hover.css">
+  <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/style.css">
 
   <!-- Fonts -->
@@ -21,28 +22,54 @@
 
 <body>
 
-  <nav id="navbar">
+  <nav class="navigatie" id="navbar">
     <div class="logo" uk-tooltip="title: Thomas Stevens; pos: right"></div>
-      <ul>
-        <a uk-scroll class="hvr-underline-from-left" href="#work"><li>Work</li></a>
-        <a uk-scroll class="hvr-underline-from-left" href="#about"><li>About</li></a>
-        <a uk-scroll class="hvr-underline-from-left" href="#contact"><li>Contact</li></a>
-      </ul>
+    <ul>
+      <a uk-scroll class="hvr-underline-from-left" href="#work">
+        <li>Work</li>
+      </a>
+      <a uk-scroll class="hvr-underline-from-left" href="#about">
+        <li>About</li>
+      </a>
+      <a uk-scroll class="hvr-underline-from-left" href="#contact">
+        <li>Contact</li>
+      </a>
+    </ul>
 
-      <div class="theme-switch-wrapper">
-        <label class="theme-switch" for="checkbox" uk-tooltip="title: Dark / Color; pos: left">
-          <input type="checkbox" id="checkbox" />
-          <div class="slider round"></div>
-        </label>
-      </div>
+    <div class="theme-switch-wrapper">
+      <label class="theme-switch" for="checkbox" uk-tooltip="title: Dark / Color; pos: left">
+        <input type="checkbox" id="checkbox" />
+        <div class="slider round"></div>
+      </label>
+    </div>
   </nav>
 
   <main>
 
     <section id="top" class="first-section">
-      <h1><span>Thomas Stevens</span> is een <span>Digital Designer</span> gespecialiseerd in <span>Visual Design</span>, gedreven door de 10 principes van <span>Dieter Rams.</h1>
-      <div class="arrow bounce">
-        <p>Scroll down</p>
+
+      <div class="content">
+        <svg class="distort" width="350" height="450" viewBox="0 0 350 450">
+          <filter id="distortionFilter">
+            <feTurbulence type="turbulence" baseFrequency="0.07 0.01" numOctaves="5" seed="2" stitchTiles="stitch" x="0%" y="0%" width="100%" height="100%" result="noise" />
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="0" xChannelSelector="R" yChannelSelector="B" x="0%" y="0%" width="100%" height="100%" filterUnits="userSpaceOnUse" />
+          </filter>
+          <g filter="url(#distortionFilter)">
+            <image class="distort__img" x="50" y="50" xlink:href="img/thomasstevens.jpg" height="350" width="250" />
+            <image class="distort__img" x="50" y="50" xlink:href="img/projectweb.jpg" height="350" width="250" />
+          </g>
+        </svg>
+
+        <nav class="menu">
+          <h1><a class="menu__link" href="#">Thomas Stevens</a> is een Visual Designer, die gedreven is door de <a class="menu__link" href="#" target="_blank">10 principes</a> van Dieter Rams.</h1>
+
+          <div class="arrow bounce">
+            <p>Scroll down</p>
+          </div>
+        </nav>
+
+
+
       </div>
     </section>
 
@@ -64,8 +91,8 @@
       <div class="img" uk-parallax="bgy: -200"></div>
       <h2>About</h2>
       <p>Thomas Stevens (1998, De Kwakel) is een student op de Hogeschool van Amsterdam. Hij is bezig met de opleiding; Communicatie & Multimedia Design.
-      <br> <br>
-      Thomas is creatief en probeert al zijn ontwerpen visueel tot leven te brengen door interacties toe te voegen.</p>
+        <br> <br>
+        Thomas is creatief en probeert al zijn ontwerpen visueel tot leven te brengen door interacties toe te voegen.</p>
       <a class="hvr-bounce-to-right" href="#">curriculum vitae</a>
     </section>
 
@@ -76,11 +103,15 @@
       <a class="hvr-grow" href="https://www.linkedin.com/in/thomas-stevens-610a92115/" target="_blank">LinkedIn</a>
     </section>
 
-    </main>
+  </main>
   </div>
 
   <script src="js/script.js"></script>
   <script src="js/uikit.js"></script>
+
+  <script src="js/charming.min.js"></script>
+  <script src="js/TweenMax.min.js"></script>
+  <script src="js/demo.js"></script>
 
 </body>
 

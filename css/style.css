@@ -76,7 +76,7 @@
    width: 4em;
  }
 
- nav {
+ .navigatie {
    background-color: var(--nav);
    border-right: 2px solid var(--border);
    bottom: 0;
@@ -91,7 +91,7 @@
    position: fixed;
  }
 
- nav ul {
+ .navigatie ul {
    display: flex;
    font-family: 'Source Sans Pro', sans-serif;
    justify-content: space-evenly;
@@ -107,7 +107,7 @@
    text-transform: uppercase;
  }
 
- nav ul a {
+ .navigatie ul a {
    color: var(--navassets);
    text-decoration: none;
    transition: .15s ease-out;
@@ -115,12 +115,12 @@
 
  }
 
- nav ul a:hover {
+ .navigatie ul a:hover {
    color: var(--navassets);
    text-decoration: none;
  }
 
- nav p {
+ .navigatie p {
    color: var(--navassets);
    font-family: 'Source Sans Pro', sans-serif;
    font-size: .5em;
@@ -187,12 +187,18 @@
    font-weight: 900;
  }
 
+ .first-section a{
+   font-weight: 900;
+   color: var(--bodyfont);
+ }
+
  .first-section h1 {
    align-self: center;
    text-align: left;
    font-size: 3em;
    font-weight: 300;
    padding: 3em 3em;
+   line-height: 1.5;
  }
 
  .second-section {

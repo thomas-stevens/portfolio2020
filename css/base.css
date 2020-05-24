@@ -1,0 +1,28 @@
+.content {
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	height: calc(100vh - 13rem);
+	position: relative;
+	justify-content: flex-start;
+	align-items: center;
+	transition: .15s ease-out;
+}
+
+.distort {
+	position: absolute;
+	pointer-events: none;
+	will-change: transform;
+}
+
+.distort__img {
+	opacity: 0;
+}
+
+.menu {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	text-align: center;
+	font-weight: normal;
+}
