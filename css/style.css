@@ -11,6 +11,7 @@
    --bodyfont: #fff;
    --background: #fff;
    --logo: url(../img/logo-zwart.svg);
+   --plus: url(../img/plus-wit.svg);
    --selection: #000000;
    --selection-hover: #fff;
    --textshadow: #000;
@@ -24,6 +25,7 @@
   --bodyfont: #e63946;
   --background: #e63946;
   --logo: url(../img/logo-wit.svg);
+  --plus: url(../img/plus-rood.svg);
   --selection: #f1faee;
   --selection-hover: #e63946;
   --textshadow: #f1faee;
@@ -259,6 +261,7 @@
    display: grid;
    grid-template-columns: 2vw 30vw 55vw;
    grid-template-rows: 10vh 45vh 25vh;
+   margin-bottom: 0;
  }
 
  .second-section-2 h2 {
@@ -310,16 +313,29 @@
  }
 
  .morework{
-   height: 5vh;
+   height: 55vh;
    display: flex;
    justify-content: center;
-   align-items: flex-start;
+   align-items: center;
  }
 
- .morework a {
+ .morework p {
    font-size: 1.5em;
    font-family: 'Fauna One', serif;
    color: var(--bodyfont);
+ }
+
+ .morework .plus {
+   align-self: center;
+   background-image: var(--plus);
+   background-repeat: no-repeat;
+   background-size: contain;
+   display: grid;
+   height: 4em;
+   margin-left: auto;
+   margin-right: auto;
+   transition: .15s ease-out;
+   width: 4em;
  }
 
  .third-section {
@@ -500,6 +516,31 @@
    60% {
      transform: translateY(-15px);
    }
+ }
+
+ .turn {
+   -moz-animation: turn 2s infinite;
+   -webkit-animation: turn 2s infinite;
+   animation: turn 2s infinite;
+ }
+
+ @keyframes turn {
+   0%, 20%, 50%, 80%, 100% {
+     transform: rotate(0deg);
+   }
+
+   33% {
+     transform: rotate(10deg);
+   }
+
+   66%{
+     transform: rotate(-10deg);
+   }
+
+   100%{
+     transform: rotate(0deg);
+   }
+
  }
 
  /* -------------------------------------------------- */
