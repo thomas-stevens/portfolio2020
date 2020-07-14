@@ -86,7 +86,7 @@
    column-gap: 5vw;
    display: grid;
    grid-template-columns: 20vw 50vw 20vw;
-   height: 15vh;
+   height: 11vh;
    transition: .15s ease-out;
    width: 100vw;
    z-index: 99;
@@ -203,6 +203,7 @@
  }
 
  .second-section {
+   max-width: 1000px;
    grid-column-gap: 5vw;
    display: grid;
    grid-template-columns: 2vw 55vw 30vw;
@@ -274,7 +275,7 @@
 
  .second-section-2 .img {
    background-attachment: fixed;
-   background-image: url(../img/projectweb.jpg);
+   background-image: url(../img/clashofcultures.jpg);
    background-position: right;
    background-repeat: no-repeat;
    background-size: contain;
@@ -394,6 +395,7 @@
 
  .fourth-section {
    margin: 0;
+   height: 80vh;
  }
 
  .fourth-section h2 {
