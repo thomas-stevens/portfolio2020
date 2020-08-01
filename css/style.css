@@ -17,7 +17,29 @@
    --textshadow: #000;
  }
 
-/* ---- ROOD & BEIGE */
+::selection {
+   color: var(--selection);
+   background: var(--selection-hover);
+}
+
+
+/* ---- BLAUW & ZAND */
+[data-theme="color"] {
+  --nav: #03045E;
+  --navassets: #F7ECCA;
+  --body: #F7ECCA;
+  --bodyfont: #03045E;
+  --background: #03045E;
+  --logo: url(../img/logo-wit.svg);
+  --plus: url(../img/plus-rood.svg);
+  --selection: #F7ECCA;
+  --selection-hover: #03045E;
+  --textshadow: #F7ECCA;
+}
+
+
+/*
+---- ROOD & BEIGE
 [data-theme="color"] {
   --nav: #e63946;
   --navassets: #f1faee;
@@ -30,22 +52,23 @@
   --selection-hover: #e63946;
   --textshadow: #f1faee;
 }
-
-::selection {
-   color: var(--selection);
-   background: var(--selection-hover);
-}
+*/
 
  /*
----- GEEL & GRIJS
+ ---- GEEL & GRIJS
  [data-theme="color"] {
-   --nav: #FEDE66;
-   --navassets: #30353D;
-   --body: #30353D;
-   --bodyfont: #FEDE66;
-   --background: #FEDE66;
-   --logo: url(../img/logo-grijs.svg);
- } */
+   --nav: #30353D;
+   --navassets: #FEDE66;
+   --body: #FEDE66;
+   --bodyfont: #30353D;
+   --background: #30353D;
+   --logo: url(../img/logo-wit.svg);
+   --plus: url(../img/plus-rood.svg);
+   --selection: #FEDE66;
+   --selection-hover: #30353D;
+   --textshadow: #FEDE66;
+ }
+ */
 
  body {
    background-color: var(--body);
@@ -71,11 +94,11 @@
    display: grid;
    grid-column-start: 1;
    grid-row-start: 1;
-   height: 3.5em;
+   height: 3em;
    margin-left: auto;
    margin-right: auto;
    transition: .15s ease-out;
-   width: 3.5em;
+   width: 3em;
  }
 
  .navigatie {
@@ -169,6 +192,7 @@
     5px 4px var(--textshadow), 4px 5px var(--textshadow),
     6px 5px var(--textshadow), 5px 6px var(--textshadow),
     7px 6px var(--textshadow);
+   line-height: 1;
 
  }
 
@@ -204,7 +228,7 @@
 
  .second-section {
    max-width: 1000px;
-   grid-column-gap: 5vw;
+   grid-column-gap: 4vw;
    display: grid;
    grid-template-columns: 2vw 55vw 30vw;
    grid-template-rows: 10vh 35vh 35vh;
@@ -216,6 +240,7 @@
    grid-row-start: 1;
    justify-self: start;
    z-index: 89;
+   width: 70%;
  }
 
  .second-section .img {
@@ -223,7 +248,7 @@
    background-image: url(../img/ebtg.png);
    background-position: left;
    background-repeat: no-repeat;
-   background-size: contain;
+   background-size: cover;
    grid-column-start: 2;
    grid-row-end: 4;
    grid-row-start: 2;
@@ -234,7 +259,8 @@
 
  .second-section p {
    font-family: 'Fauna One', serif;
-   font-size: 1.5em;
+   /* font-size: 1.5em; */
+   font-size: 1.2vw;
    grid-column-start: 3;
    grid-row-end: 3;
    grid-row-start: 2;
@@ -255,10 +281,11 @@
    width: 7.7em;
    padding: .6em;
    z-index: 1;
+   transition: .15s ease-out;
  }
 
  .second-section-2 {
-   grid-column-gap: 5vw;
+   grid-column-gap: 4vw;
    display: grid;
    grid-template-columns: 2vw 30vw 55vw;
    grid-template-rows: 10vh 45vh 25vh;
@@ -278,7 +305,7 @@
    background-image: url(../img/clashofcultures.jpg);
    background-position: right;
    background-repeat: no-repeat;
-   background-size: contain;
+   background-size: cover;
    grid-column-start: 3;
    grid-row-end: 4;
    grid-row-start: 2;
@@ -290,7 +317,7 @@
 
  .second-section-2 p {
    font-family: 'Fauna One', serif;
-   font-size: 1.5em;
+   font-size: 1.2vw;
    grid-column-start: 2;
    grid-row-end: 3;
    grid-row-start: 2;
@@ -311,6 +338,7 @@
    width: 7.7em;
    padding: .6em;
    z-index: 1;
+   transition: .15s ease-out;
  }
 
  .morework{
@@ -326,7 +354,7 @@
    color: var(--bodyfont);
  }
 
- .morework .plus {
+ /* .morework .plus {
    align-self: center;
    background-image: var(--plus);
    background-repeat: no-repeat;
@@ -337,10 +365,10 @@
    margin-right: auto;
    transition: .15s ease-out;
    width: 4em;
- }
+ } */
 
  .third-section {
-   grid-column-gap: 5vw;
+   grid-column-gap: 4vw;
    display: grid;
    grid-template-columns: 2vw 45vw 40vw;
    grid-template-rows: 10vh 35vh 35vh;
@@ -381,11 +409,12 @@
    padding: .6em;
    align-self: end;
    z-index: 1;
+   transition: .15s ease-out;
  }
 
  .third-section p {
    font-family: 'Fauna One', serif;
-   font-size: 1.5em;
+   font-size: 1.2vw;
    grid-column-start: 3;
    grid-row-end: 3;
    grid-row-start: 2;
@@ -402,7 +431,7 @@
    font-size: 8em;
    display: flex;
    justify-content: center;
-   align-items: flex-start;
+   padding-bottom: .2em;
  }
 
  .fourth-section a {
@@ -415,10 +444,6 @@
    margin-left: auto;
    width: 10.5em;
    margin-bottom: .5em;
- }
-
- .fourth-section a:last-of-type {
-   width: 9em;
  }
 
  .work-section {
@@ -644,3 +669,18 @@
  }
 
  /* -------------------------------------------------- */
+
+ @media (min-width: 1024px) {
+   .second-section p{
+     font-size: 1.5vw;
+   }
+   .second-section-2 p{
+     font-size: 1.5vw;
+   }
+   .third-section p{
+     font-size: 1.5vw;
+   }
+   .fourth-section a{
+     font-size: 1.1em;
+   }
+ }

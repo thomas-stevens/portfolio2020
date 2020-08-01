@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="313px" height="322px" viewBox="0 0 313 322" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
     <title>logo-wit</title>
-    <desc>Created with Sketch.</desc>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="logo-wit" transform="translate(8.000000, 8.000000)">
-            <polygon id="T" fill="#F1FAEE" fill-rule="nonzero" points="160.746 208 160.746 120.952 194.91 120.952 194.91 97.396 102.09 97.396 102.09 120.952 136.098 120.952 136.098 208"></polygon>
-            <rect id="Rectangle" stroke="#F1FAEE" stroke-width="15" x="0" y="0" width="297" height="306"></rect>
+            <polygon id="T" fill="#F7ECCA" fill-rule="nonzero" points="160.746 208 160.746 120.952 194.91 120.952 194.91 97.396 102.09 97.396 102.09 120.952 136.098 120.952 136.098 208"></polygon>
+            <rect id="Rectangle" stroke="#F7ECCA" stroke-width="15" x="0" y="0" width="297" height="306"></rect>
         </g>
     </g>
 </svg>
