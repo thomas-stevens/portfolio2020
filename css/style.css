@@ -23,23 +23,24 @@
 }
 
 
-/* ---- BLAUW & ZAND */
+/*
+---- BLAUW & ZAND
+
 [data-theme="color"] {
-  --nav: #03045E;
+  --nav: #03045e;
   --navassets: #F7ECCA;
   --body: #F7ECCA;
-  --bodyfont: #03045E;
-  --background: #03045E;
+  --bodyfont: #03045e;
+  --background: #03045e;
   --logo: url(../img/logo-wit.svg);
   --plus: url(../img/plus-rood.svg);
   --selection: #F7ECCA;
-  --selection-hover: #03045E;
+  --selection-hover: #03045e;
   --textshadow: #F7ECCA;
-}
+} */
 
 
-/*
----- ROOD & BEIGE
+/* ---- ROOD & BEIGE */
 [data-theme="color"] {
   --nav: #e63946;
   --navassets: #f1faee;
@@ -52,7 +53,7 @@
   --selection-hover: #e63946;
   --textshadow: #f1faee;
 }
-*/
+
 
  /*
  ---- GEEL & GRIJS
@@ -227,7 +228,6 @@
  }
 
  .second-section {
-   max-width: 1000px;
    grid-column-gap: 4vw;
    display: grid;
    grid-template-columns: 2vw 55vw 30vw;
@@ -349,9 +349,14 @@
  }
 
  .morework p {
-   font-size: 1.5em;
-   font-family: 'Fauna One', serif;
+   border: 2px solid var(--bodyfont);
    color: var(--bodyfont);
+   font-family: 'Source Sans Pro', sans-serif;
+   font-size: 1.5em;
+   font-weight: 900;
+   text-transform: uppercase;
+   padding: .6em;
+   transition: .15s ease-out;
  }
 
  /* .morework .plus {
@@ -435,7 +440,7 @@
  }
 
  .fourth-section a {
-   font-size: 1.5em;
+   font-size: 1.2em;
    font-family: 'Fauna One', serif;
    color: var(--bodyfont);
    display: flex;
@@ -680,7 +685,37 @@
    .third-section p{
      font-size: 1.5vw;
    }
-   .fourth-section a{
-     font-size: 1.1em;
-   }
+ }
+
+ @media (max-width: 1070px) {
+    .second-section{
+      grid-template-columns: 100%;
+      grid-template-rows: 60vh 25vh 10vh;
+    }
+    .second-section .img{
+      grid-column-start: 1;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      width: 100%;
+      background-position: -300px;
+    }
+    .second-section h2{
+      grid-column-start: 1;
+      padding: 0 50px;
+      margin-top: -80px;
+      font-size: 6em;
+    }
+    .second-section p{
+      grid-column-start: 1;
+      grid-row-start: 2;
+      margin: 3em;
+      align-self: flex-start;
+      font-size: 1em;
+    }
+    .second-section a{
+      grid-column-start: 1;
+      grid-row-start: 3;
+      margin-left: 2em;
+      align-self: flex-end;
+    }
  }
