@@ -749,7 +749,7 @@
      align-self: flex-end;
    }
 
-   .morework{
+   .morework {
      padding: 7em 0;
    }
 
@@ -788,5 +788,101 @@
      margin-left: 2em;
      align-self: flex-end;
    }
+ }
 
+ @media (max-width: 768px) {
+   .second-section .img {
+     background-position-x: -300px;
+   }
+ }
+
+ @media (max-width: 590px) {
+   .first-section h1 {
+     font-size: 2.4em;
+   }
+
+   .navigatie ul {
+     font-size: 1em;
+     width: 18em;
+   }
+
+   .logo {
+     height: 2.2em;
+   }
+
+   .theme-switch {
+     display: inline-block;
+     height: 22px;
+     position: relative;
+     width: 40px;
+   }
+
+   .slider:before {
+     height: 14px;
+     width: 14px;
+   }
+
+   .second-section {
+     grid-template-rows: 60vh 250px;
+   }
+
+   .second-section a {
+     margin-top: 2em;
+   }
+
+   .second-section-2 {
+     grid-template-rows: 60vh 150px;
+   }
+
+   .second-section-2 a {
+     margin-top: 2em;
+   }
+
+   .third-section {
+     grid-template-rows: 60vh 220px;
+   }
+
+   .third-section a {
+     margin-top: 2em;
+   }
+ }
+
+ @media (max-width: 500px) {
+   .first-section {
+     grid-template-rows: 55vh 10vh;
+     margin-bottom: 0;
+   }
+
+   .first-section h1 {
+     font-size: 2em;
+   }
+
+   .second-section h2 {
+     font-size: 5em;
+   }
+
+   .second-section-2 h2 {
+     font-size: 5em;
+   }
+
+   .third-section h2 {
+     font-size: 5em;
+     margin-top: -60px;
+   }
+
+   .fourth-section h2 {
+     font-size: 5em;
+   }
+
+   .second-section a {
+     margin-top: 3.5em;
+   }
+
+   .second-section-2 a {
+     margin-top: 3.5em;
+   }
+
+   .third-section a {
+     margin-top: 3.5em;
+   }
  }
