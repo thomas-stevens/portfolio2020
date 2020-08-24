@@ -11,7 +11,6 @@
    --bodyfont: #fff;
    --background: #fff;
    --logo: url(../img/logo-zwart.svg);
-   --plus: url(../img/plus-wit.svg);
    --selection: #000000;
    --selection-hover: #fff;
    --textshadow: #000;
@@ -23,35 +22,6 @@
    background: var(--selection-hover);
  }
 
- /*
----- BLAUW & ZAND
-
-[data-theme="color"] {
-  --nav: #03045e;
-  --navassets: #F7ECCA;
-  --body: #F7ECCA;
-  --bodyfont: #03045e;
-  --background: #03045e;
-  --logo: url(../img/logo-wit.svg);
-  --plus: url(../img/plus-rood.svg);
-  --selection: #F7ECCA;
-  --selection-hover: #03045e;
-  --textshadow: #F7ECCA;
-} */
-
- /* [data-theme="color"] {
-   --nav: #e63946;
-   --navassets: #f1faee;
-   --body: #f1faee;
-   --bodyfont: #e63946;
-   --background: #e63946;
-   --logo: url(../img/logo-wit.svg);
-   --plus: url(../img/plus-rood.svg);
-   --selection: #f1faee;
-   --selection-hover: #e63946;
-   --textshadow: #f1faee;
- } */
-
  [data-theme="color"] {
    --nav: #011638;
    --navassets: #F4F1DE;
@@ -59,29 +29,12 @@
    --bodyfont: #011638;
    --background: #011638;
    --logo: url(../img/logo-wit.svg);
-   --plus: url(../img/plus-rood.svg);
    --selection: #F4F1DE;
    --selection-hover: #011638;
    --textshadow: #F4F1DE;
    --extra: #F4845F;
  }
 
-
- /*
- ---- GEEL & GRIJS
- [data-theme="color"] {
-   --nav: #30353D;
-   --navassets: #FEDE66;
-   --body: #FEDE66;
-   --bodyfont: #30353D;
-   --background: #30353D;
-   --logo: url(../img/logo-wit.svg);
-   --plus: url(../img/plus-rood.svg);
-   --selection: #FEDE66;
-   --selection-hover: #30353D;
-   --textshadow: #FEDE66;
- }
- */
  body {
    background-color: var(--body);
    transition: .15s ease-out;
@@ -425,6 +378,17 @@
    grid-row-start: 2;
    justify-self: start;
    line-height: 1.7em;
+ }
+
+ .third-section q {
+   font-family: 'Fauna One', serif;
+   font-size: 1.2vw;
+   grid-column-start: 3;
+   grid-row-end: 3;
+   grid-row-start: 4;
+   justify-self: start;
+   line-height: 1.7em;
+   padding-top: 2em;
  }
 
  .fourth-section {
