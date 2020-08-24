@@ -15,6 +15,7 @@
    --selection: #000000;
    --selection-hover: #fff;
    --textshadow: #000;
+   --extra: #fff;
  }
 
  ::selection {
@@ -37,8 +38,8 @@
   --selection-hover: #03045e;
   --textshadow: #F7ECCA;
 } */
- /* ---- ROOD & BEIGE */
- [data-theme="color"] {
+
+ /* [data-theme="color"] {
    --nav: #e63946;
    --navassets: #f1faee;
    --body: #f1faee;
@@ -49,7 +50,22 @@
    --selection: #f1faee;
    --selection-hover: #e63946;
    --textshadow: #f1faee;
+ } */
+
+ [data-theme="color"] {
+   --nav: #011638;
+   --navassets: #F4F1DE;
+   --body: #F4F1DE;
+   --bodyfont: #011638;
+   --background: #011638;
+   --logo: url(../img/logo-wit.svg);
+   --plus: url(../img/plus-rood.svg);
+   --selection: #F4F1DE;
+   --selection-hover: #011638;
+   --textshadow: #F4F1DE;
+   --extra: #F4845F;
  }
+
 
  /*
  ---- GEEL & GRIJS
@@ -148,6 +164,10 @@
    text-align: center;
  }
 
+ .top {
+   display: none;
+ }
+
  .sticky {
    bottom: 0;
    position: fixed;
@@ -174,7 +194,7 @@
  }
 
  section h2 {
-   color: var(--bodyfont);
+   color: var(--extra);
    font-family: 'Playfair Display', serif;
    font-weight: bold;
    margin: 0;
@@ -263,8 +283,8 @@
 
  .second-section a {
    align-self: end;
-   border: 2px solid var(--bodyfont);
-   color: var(--bodyfont);
+   border: 2px solid var(--extra);
+   color: var(--extra);
    font-family: 'Source Sans Pro', sans-serif;
    font-size: 1.5em;
    font-weight: 900;
@@ -320,8 +340,8 @@
 
  .second-section-2 a {
    align-self: end;
-   border: 2px solid var(--bodyfont);
-   color: var(--bodyfont);
+   border: 2px solid var(--extra);
+   color: var(--extra);
    font-family: 'Source Sans Pro', sans-serif;
    font-size: 1.5em;
    font-weight: 900;
@@ -342,8 +362,8 @@
  }
 
  .morework p {
-   border: 2px solid var(--bodyfont);
-   color: var(--bodyfont);
+   border: 2px solid var(--extra);
+   color: var(--extra);
    font-family: 'Source Sans Pro', sans-serif;
    font-size: 1.5em;
    font-weight: 900;
@@ -352,18 +372,6 @@
    transition: .15s ease-out;
  }
 
- /* .morework .plus {
-   align-self: center;
-   background-image: var(--plus);
-   background-repeat: no-repeat;
-   background-size: contain;
-   display: grid;
-   height: 4em;
-   margin-left: auto;
-   margin-right: auto;
-   transition: .15s ease-out;
-   width: 4em;
- } */
  .third-section {
    grid-column-gap: 4vw;
    display: grid;
@@ -394,8 +402,8 @@
  }
 
  .third-section a {
-   border: 2px solid var(--bodyfont);
-   color: var(--bodyfont);
+   border: 2px solid var(--extra);
+   color: var(--extra);
    font-family: 'Source Sans Pro', sans-serif;
    font-size: 1.5em;
    font-weight: 900;
@@ -434,7 +442,7 @@
  .fourth-section a {
    font-size: 1.2em;
    font-family: 'Fauna One', serif;
-   color: var(--bodyfont);
+   color: var(--extra);
    display: flex;
    justify-content: center;
    margin-right: auto;
@@ -597,6 +605,10 @@
    }
  }
 
+ .arrow p{
+   color: var(--extra);
+ }
+
  /* -------------------------------------------------- */
  /* -------------------------------------------------- */
  /* Dark Mode */
@@ -678,6 +690,21 @@
    }
  }
 
+  @media (max-width: 1200px) {
+    .second-section .img{
+      background-attachment: scroll;
+    }
+
+    .second-section-2 .img{
+      background-attachment: scroll;
+    }
+
+    .third-section .img {
+      background-size: cover;
+      background-attachment: scroll;
+    }
+}
+
  @media (max-width: 1070px) {
    .second-section {
      grid-template-columns: 100%;
@@ -689,6 +716,7 @@
      grid-column-start: 1;
      grid-row-start: 1;
      grid-row-end: 2;
+     background-position: center center;
      width: 100%;
    }
 
@@ -717,7 +745,6 @@
    .second-section-2 {
      grid-template-columns: 100%;
      grid-template-rows: 60vh 150px 10vh;
-     /* padding-bottom: 5em; */
    }
 
    .second-section-2 .img {
@@ -764,7 +791,6 @@
      grid-row-start: 1;
      grid-row-end: 2;
      width: 100%;
-     background-size: cover;
    }
 
    .third-section h2 {
@@ -791,12 +817,31 @@
  }
 
  @media (max-width: 768px) {
-   .second-section .img {
-     background-position-x: -300px;
+   .hvr-underline-from-left:before {
+     height: 2px;
    }
  }
 
  @media (max-width: 590px) {
+   .navigatie {
+     column-gap: 5vw;
+     grid-template-columns: 20vw 55vw 15vw;
+   }
+
+   .top {
+     display: grid;
+     place-self: center;
+     margin-right: 1.5em;
+   }
+
+   .theme-switch-wrapper {
+     display: none;
+   }
+
+   .distort {
+     opacity: 0;
+   }
+
    .first-section h1 {
      font-size: 2.4em;
    }
@@ -808,6 +853,7 @@
 
    .logo {
      height: 2.2em;
+     margin-left: 2em;
    }
 
    .theme-switch {
@@ -848,9 +894,14 @@
  }
 
  @media (max-width: 500px) {
+   .navigatie ul {
+     font-size: .9em;
+     width: 15em;
+   }
+
    .first-section {
-     grid-template-rows: 55vh 10vh;
-     margin-bottom: 0;
+     grid-template-rows: 65vh 15vh;
+     margin-bottom: 5em;
    }
 
    .first-section h1 {
@@ -858,20 +909,20 @@
    }
 
    .second-section h2 {
-     font-size: 5em;
+     font-size: 4em;
    }
 
    .second-section-2 h2 {
-     font-size: 5em;
+     font-size: 4em;
    }
 
    .third-section h2 {
-     font-size: 5em;
+     font-size: 4em;
      margin-top: -60px;
    }
 
    .fourth-section h2 {
-     font-size: 5em;
+     font-size: 4em;
    }
 
    .second-section a {

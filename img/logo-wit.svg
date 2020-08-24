@@ -3,8 +3,8 @@
     <title>logo-wit</title>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="logo-wit" transform="translate(8.000000, 8.000000)">
-            <polygon id="T" fill="#FFFFFF" fill-rule="nonzero" points="160.746 208 160.746 120.952 194.91 120.952 194.91 97.396 102.09 97.396 102.09 120.952 136.098 120.952 136.098 208"></polygon>
-            <rect id="Rectangle" stroke="#FFFFFF" stroke-width="15" x="0" y="0" width="297" height="306"></rect>
+            <polygon id="T" fill="#F4F1DE" fill-rule="nonzero" points="160.746 208 160.746 120.952 194.91 120.952 194.91 97.396 102.09 97.396 102.09 120.952 136.098 120.952 136.098 208"></polygon>
+            <rect id="Rectangle" stroke="#F4F1DE" stroke-width="15" x="0" y="0" width="297" height="306"></rect>
         </g>
     </g>
 </svg>
