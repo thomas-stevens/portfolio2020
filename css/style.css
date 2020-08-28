@@ -702,7 +702,7 @@
    position: absolute;
    left: 50%;
    width: 2px;
-   height: 93%;
+   height: 92.8%;
    margin-left: -1px;
    content: "";
    background: var(--timeline-line);
