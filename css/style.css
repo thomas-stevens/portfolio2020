@@ -12,7 +12,7 @@
    --bodyfont: #fff;
    --background: #fff;
    --logo: url(../img/logo-zwart.svg);
-   --selection: #000000;
+   --selection: #000;
    --selection-hover: #fff;
    --textshadow: #000;
    --extra: #fff;
@@ -494,14 +494,64 @@
 
  .work-section-4 {
    display: grid;
-   grid-template-columns: 60vw 20vw;
-   grid-template-rows: 5vh;
+   grid-template-columns: 30vw 50vw;
    column-gap: 5vw;
+   grid-template-rows: 10vh;
    width: 85vw;
    margin-left: auto;
    margin-right: auto;
-   margin-bottom: 0;
+   margin-bottom: 6em;
+   padding-bottom: 10em;
    height: 100vh;
+ }
+
+ .work-section-4 h2 {
+   grid-column-start: 1;
+   grid-row-start: 1;
+   font-size: 2em;
+ }
+
+ .work-section-4 .first {
+   grid-column-start: 2;
+   grid-row-start: 2;
+   font-size: 1.5em;
+   line-height: 1.7em;
+   padding-bottom: 2em;
+ }
+
+ .work-section-4 .second {
+   grid-column-start: 2;
+   grid-row-start: 3;
+   font-size: 1.5em;
+   line-height: 1.7em;
+   padding-bottom: 2em;
+ }
+
+ .work-section-4 .third {
+   grid-column-start: 2;
+   grid-row-start: 4;
+   font-size: 1.5em;
+   line-height: 1.7em;
+   padding-bottom: 2em;
+ }
+
+ .work-section-4 span{
+   font-size: 1em;
+   font-family: 'Source Sans Pro', sans-serif;
+   font-weight: bold;
+   text-transform: uppercase;
+ }
+
+ .work-section-4 .img {
+   grid-row-start: 2;
+   grid-row-end: 8;
+   grid-column-start: 1;
+   /* background-attachment: fixed; */
+   background-image: url(../img/poster-reggae-rock.jpg);
+   background-repeat: no-repeat;
+   background-size: contain;
+   justify-self: center;
+   width: 30vw;
  }
 
  .cv-section {
@@ -982,7 +1032,7 @@
      display: none;
    }
    body{
-     background-color: #000;
+     background-color: var(--body);
    }
 
    .on-mobile{
@@ -994,7 +1044,7 @@
      grid-template-columns: 30% 50% 20%;
    }
    .on-mobile img{
-     width: 20vw;
+     width: 70px;
      margin: 2em;
      grid-column-start: 1;
    }
